@@ -22,7 +22,9 @@ function findSmallest($array){
 function selectionSort($arr){
     $newArr = [];
     //iterate ro find the smallest and add it to the new array
-    for($i = 0; $i < count($arr); $i++){
+    //first find the size of array
+    $size = count($arr);
+    for($i = 0; $i < $size; $i++){
         $smallest = findSmallest($arr);
         $newArr[] = $arr[$smallest];
         //now remove it from the old array
